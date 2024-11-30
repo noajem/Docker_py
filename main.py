@@ -12,4 +12,4 @@ if st.button("Submit"):
     if name:
         st.write(f"Hello, {name}! 👋 Welcome to Streamlit!")
     else:
-        st.write("Please enter your name to proceed.")
+        st.write("Please enter your name: ")
