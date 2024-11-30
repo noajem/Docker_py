@@ -15,26 +15,7 @@ roll_number = st.text_input("Enter your roll number:")
 if name and roll_number:
     st.success(f"Hello, {name}! Your roll number is {roll_number}.")
 
-# Navigation Bar with Purple Background
-with st.sidebar:
-    selected = option_menu(
-        menu_title="Navigation",  # required
-        options=["Home", "About", "Contact"],  # options for the menu
-        icons=["house", "info", "envelope"],  # icons from Bootstrap
-        menu_icon="cast",  # main menu icon
-        default_index=0,  # default selected menu item
-        styles={
-            "container": {"padding": "5px", "background-color": "#6A0DAD"},
-            "icon": {"color": "white", "font-size": "20px"},
-            "nav-link": {
-                "font-size": "18px",
-                "text-align": "left",
-                "margin": "5px",
-                "--hover-color": "#800080",
-            },
-            "nav-link-selected": {"background-color": "#9B30FF"},
-        },
-    )
+
 
 # Content Based on Navigation Selection
 if selected == "Home":
